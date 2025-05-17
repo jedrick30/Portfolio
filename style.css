@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url("anime.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps background fixed during scroll */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 80vh; /* Adjust as needed */
+    padding: 2rem;
+}
+
+.home-content {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+}
+
+.home-content h1 {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.2rem; /* Adjust as needed */
+}
+
+.home-image {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+}
+
+.home-image img {
+    max-width: 400px; /* Adjust the maximum width */
+    height: auto;
+    border-radius: 10px; /* Optional: Round the corners */
+}
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 80vh; /* Adjust as needed */
+    padding: 2rem;
+}
+.about-content {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+}
+
+.about-content h2 {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.2rem; /* Adjust as needed */
+}
+
+.about-image {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+}
+
+.about-image img {
+    max-width: 400px; /* Adjust the maximum width */
+    height: auto;
+    border-radius: 10px; /* Optional: Round the corners */
+}
+/* Hobbies Section */
+.hobbies {
+    padding: 2rem 0;
+    text-align: center;
+
+}
+.hobby-image {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hobby-image img {
+    max-width: 500px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Round the corners */
+}
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    color: #007bff; /* Or your preferred icon color */
+}
+
+.contact-form {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    section {
+        padding: 1rem 0;
+    }
+    .home, .about {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+    .home-content, .about-content {
+        text-align: center;
+    }
+
+    .home-image, .about-image {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .contact-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+}
